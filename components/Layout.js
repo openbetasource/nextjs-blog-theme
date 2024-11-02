@@ -53,7 +53,7 @@ export default function Layout({ children }) {
   return (
     <div className="flex">
       <Sidebar />
-      <div className="flex-1 ml-64 p-4">
+      <div className="flex-1 ml-64 p-4 max-w-4xl mx-auto">
         {children}
       </div>
     </div>
