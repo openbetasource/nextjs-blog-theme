@@ -1,7 +1,7 @@
 export const getGlobalData = () => {
   return {
     name: 'StarBloat',
-    blogTitle: 'All For Now',
-    footerText: 'Your footer text here',
+    blogTitle: 'Code Chronicles: A Developer\'s Journey',
+    footerText: '© 2024 • Made with passion and coffee ☕',
   };
 };
