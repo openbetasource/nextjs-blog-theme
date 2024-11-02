@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { getPosts } from '../utils/mdx-utils';
-import { Orbitron, Playfair_Display } from 'next/font/google';
+import { Orbitron, Montserrat } from 'next/font/google';
 
 import Footer from '../components/Footer';
 import Header from '../components/Header';
@@ -10,7 +10,7 @@ import { getGlobalData } from '../utils/global-data';
 import SEO from '../components/SEO';
 
 const orbitron = Orbitron({ subsets: ['latin'] });
-const playfair = Playfair_Display({ subsets: ['latin'] });
+const montserrat = Montserrat({ subsets: ['latin'] });
 
 export default function Index({ posts, globalData }) {
   return (
@@ -18,7 +18,7 @@ export default function Index({ posts, globalData }) {
       <SEO title={globalData.name} description={globalData.blogTitle} />
       <Header name={globalData.name} />
       <main className="w-full">
-        <h1 className={`${playfair.className} mb-12 text-3xl text-center lg:text-5xl`}>
+        <h1 className={`${montserrat.className} mb-12 text-3xl text-center lg:text-5xl`}>
           {globalData.blogTitle}
         </h1>
         <ul className="w-full">
