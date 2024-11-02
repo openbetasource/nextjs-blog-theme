@@ -1,14 +1,13 @@
-import Link from 'next/link';
+import { Orbitron } from 'next/font/google';
+
+const orbitron = Orbitron({ subsets: ['latin'] });
 
 export default function Header({ name }) {
   return (
-    <header className="pt-20 pb-12">
-      <div className="block w-12 h-12 mx-auto mb-4 rounded-full bg-gradient-conic from-gradient-3 to-gradient-4" />
-      <p className="text-2xl text-center dark:text-white">
-        <Link href="/">
-          {name}
-        </Link>
-      </p>
+    <header className="py-6">
+      <h1 className={`${orbitron.className} text-4xl text-center`}>
+        {name}
+      </h1>
     </header>
   );
 }
