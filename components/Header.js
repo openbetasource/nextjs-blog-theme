@@ -7,7 +7,7 @@ export default function Header({ name }) {
   return (
     <header className="py-6">
       <h1 className="text-4xl text-center">
-        <Link href="/" className={`${raleway.className} transition-transform transform hover:scale-110`}>
+        <Link href="/" className={`${raleway.className} transition-transform transform hover:uppercase`}>
           {name}
         </Link>
       </h1>
